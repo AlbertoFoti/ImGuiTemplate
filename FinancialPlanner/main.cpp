@@ -1,4 +1,3 @@
-
 #include "FinancialPlanner.h"
 
 // OpenGL glad, GLFW  (Window, Renderer)
