@@ -3,12 +3,12 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-#include "includeImGui.h"
 #include <iostream>
 #include <string>
 
 #include "Core.h"
 
+// Financial Planner
 class FinancialPlanner {
 private:
 	Core core;
@@ -23,6 +23,7 @@ public:
 private:
 	// Views
 	void ShowCompoundInterestCalculator(const char* nameGUI);
+	void ShowDemoWindow();
 
 	// Helper Functions
 	void HelpMarker(const char* desc);
