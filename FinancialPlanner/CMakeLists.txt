@@ -1,6 +1,7 @@
 ﻿cmake_minimum_required (VERSION 3.8)
 
-add_executable (main "main.cpp" "FinancialPlanner.cpp" "FinancialPlanner.h"  "core.cpp" "Core.h"  )
+
+add_executable (main WIN32 "main.cpp" "FinancialPlanner.cpp" "FinancialPlanner.h"  "core.cpp" "Core.h"  )
 
 # Dependencies
 
