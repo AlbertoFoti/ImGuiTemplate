@@ -4,9 +4,9 @@ Personal Finance Planner <br>
 Current Version : **Version 0.1.2**
 
 ## Version 0.1.0 Features
-Version 0.1.1 <br>
+### Version 0.1.1
 - Basic Compound Interest Calculator <br>
-Version 0.1.2 <br>
+### Version 0.1.2 <br>
 - in App Docking Space for frames <br>
 - Empty Demo window
 
