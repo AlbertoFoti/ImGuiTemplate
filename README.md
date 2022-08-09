@@ -1,22 +1,36 @@
-# FinancialPlanner
-Personal Finance Planner <br>
+# ImGui Template for C++ on Windows
 
-Current Version : **Version 0.1.2**
+## Vcpkg install
+Follow instruction on https://vcpkg.io/en/getting-started.html :
 
-## Version 0.2.0 Objectives
-- Basic forecasting plots
-- Demo window upgrade
+in C:\dev
 
-## Version 0.1.0 Features
-### Version 0.1.2
-- in App Docking Space for frames <br>
-- Empty Demo window
-### Version 0.1.1
-- Basic Compound Interest Calculator <br>
+    git clone <url>
+    .\vcpkg\bootstrap-vcpkg.bat
+
+    cd vcpkg
+    vcpkg integrate install
+
+Then, follow the procedure of your IDE to add vcpkg as a CMake Option:
+
+For Clion
+
+    -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
+
+If you want to search additional libraries use
+
+    vcpkg search <library_name>
+    vcpkg install <library_name>[<feature>]:<target>
+
+Just as an example for imgui
+
+    vcpkg install imgui[docking-experimental,glfw-binding, opengl3-binding]:x64-windows
 
 ## Libraries Used
-- vcpkg library manager <br>
+
+- vcpkg library manager
+
 - ImGui library (docking branch)
 
 ## License and Copyright
-© 2022 Alberto Foti. All Rights Reserved.
+© 2022 Alberto Foti. MIT License.
