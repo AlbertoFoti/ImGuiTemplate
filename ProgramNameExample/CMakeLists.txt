@@ -10,13 +10,13 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 find_package(implot CONFIG REQUIRED)
 
-add_executable (main "main.cpp" ${Sources})
+add_executable (${PROJECT_NAME} "main.cpp" ${Sources})
 
 # sub directories
 add_subdirectory("assets")
 
 # Dependencies Targets
-target_link_libraries(main PRIVATE glad::glad)
-target_link_libraries(main PRIVATE glfw)
-target_link_libraries(main PRIVATE imgui::imgui)
-target_link_libraries(main PRIVATE implot::implot)
+target_link_libraries(${PROJECT_NAME} PRIVATE glad::glad)
+target_link_libraries(${PROJECT_NAME} PRIVATE glfw)
+target_link_libraries(${PROJECT_NAME} PRIVATE imgui::imgui)
+target_link_libraries(${PROJECT_NAME} PRIVATE implot::implot)
