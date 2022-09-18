@@ -15,6 +15,14 @@ Then, follow the procedure of your IDE to add vcpkg as a CMake Option:
 
 For Clion
 
+- Linux
+
+
+    -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
+
+- Windows
+
+
     -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
 
 If you want to search additional libraries use
