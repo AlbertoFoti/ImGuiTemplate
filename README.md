@@ -1,5 +1,7 @@
 # ImGui Template for C++ on Windows
 
+ImGui Template to develop C++ Desktop Apps
+
 ## Vcpkg install
 Follow instruction on https://vcpkg.io/en/getting-started.html :
 
@@ -41,4 +43,4 @@ Just as an example for imgui
 - ImGui library (docking branch)
 
 ## License and Copyright
-© 2022 Alberto Foti. MIT License.
+Â© 2022 Alberto Foti. MIT License.
