@@ -3,16 +3,14 @@
 // OpenGL glad, GLFW  (Renderer)
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
+#include <SFML/Graphics/CircleShape.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/System/Clock.hpp>
+#include <SFML/Window/Event.hpp>
 
 /**
  * @brief Main : Entry point for program control (update and render loop)
  * Prepares window and other graphical components through some rendering API (ex. glfw/opengl3/glad, Vulkan, DirectX)
- * 
- * @param hInsstance 
- * @param hPrevInstance 
- * @param lcCmdLine 
- * @param nShowCmd 
- * @return int 
  */
 int main()
 {
