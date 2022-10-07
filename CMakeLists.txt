@@ -11,3 +11,6 @@ include(CPack)
 
 # Include subdirectories
 add_subdirectory ("ProgramNameExample")
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/imgui.ini
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME})
