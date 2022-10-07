@@ -7,12 +7,6 @@
 /**
  * @brief Main : Entry point for program control (update and render loop)
  * Prepares window and other graphical components through some rendering API (ex. glfw/opengl3/glad, Vulkan, DirectX)
- * 
- * @param hInsstance 
- * @param hPrevInstance 
- * @param lcCmdLine 
- * @param nShowCmd 
- * @return int 
  */
 int main()
 {
