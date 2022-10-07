@@ -1,4 +1,4 @@
-#include "EntryPointExample.h"
+#include "EntryPointExample.hpp"
 
 // OpenGL glad, GLFW  (Renderer)
 #include "glad/glad.h"

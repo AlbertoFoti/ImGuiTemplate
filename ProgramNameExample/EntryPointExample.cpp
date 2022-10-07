@@ -1,4 +1,4 @@
-#include "EntryPointExample.h"
+#include "EntryPointExample.hpp"
 
 #define IM_CLAMP(V, MN, MX)     ((V) < (MN) ? (MN) : (V) > (MX) ? (MX) : (V))
 

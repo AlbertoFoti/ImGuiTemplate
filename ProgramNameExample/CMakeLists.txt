@@ -2,7 +2,7 @@
 
 set(Sources 
     "EntryPointExample.cpp"
-    "EntryPointExample.h")
+    "EntryPointExample.hpp")
 
 # Packages (Dependencies)
 find_package(glad CONFIG REQUIRED)
