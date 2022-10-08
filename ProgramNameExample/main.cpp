@@ -31,7 +31,7 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
 
     // Create window with graphics context
-	GLFWwindow* window = glfwCreateWindow(1280, 720, "Financial Planner", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(__WINDOW_WIDTH__, __WINDOW_HEIGHT__, __APP_NAME__, NULL, NULL);
 	if (window == NULL) {
 		return 1;
 	}
@@ -55,7 +55,7 @@ int main()
 #if __SFML_PROGRAM__
 
     // SFML window setup
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Window Title");
+    sf::RenderWindow window(sf::VideoMode(__WINDOW_WIDTH__, __WINDOW_HEIGHT__), __APP_NAME__);
     if(!ImGui::SFML::Init(window))
         return 2;
 

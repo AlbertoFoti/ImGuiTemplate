@@ -16,12 +16,13 @@ add_executable (${PROJECT_NAME} "main.cpp" ${Sources})
 
 # sub directories
 add_subdirectory("Core")
-add_subdirectory("Src")
+add_subdirectory("src")
 add_subdirectory("src_example")
 add_subdirectory("assets")
 
 # Dependencies Targets
 target_link_libraries(${PROJECT_NAME} PRIVATE RenderCore)
+target_link_libraries(${PROJECT_NAME} PRIVATE Src)
 target_link_libraries(${PROJECT_NAME} PRIVATE ProgramSrc)
 target_link_libraries(${PROJECT_NAME} PRIVATE glad::glad)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw)
