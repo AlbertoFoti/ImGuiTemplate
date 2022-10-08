@@ -11,6 +11,7 @@
 #include <iostream>
 #include <math.h>
 #include <climits>
+#include <functional>
 #include <string>
 #include <memory>
 #include <vector>

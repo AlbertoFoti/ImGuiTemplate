@@ -4,6 +4,7 @@
 #include <math.h>
 #include <climits>
 #include <string>
+#include <functional>
 #include <memory>
 #include <vector>
 #include "RenderCore.hpp"
