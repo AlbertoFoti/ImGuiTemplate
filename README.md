@@ -17,15 +17,14 @@ Then, follow the procedure of your IDE to add vcpkg as a CMake Option:
 
 For Clion
 
-- Linux
-
-
     -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
 
-- Windows
+install dependencies 
 
-
-    -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
+    sudo apt-get install libx11-dev
+    sudo apt-get install xorg-dev
+    sudo apt-get install freeglut3-dev
+    sudo apt-get install libudev-dev
 
 If you want to search additional libraries use
 

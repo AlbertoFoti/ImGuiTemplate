@@ -14,7 +14,7 @@ void RenderCoreOpenGl::Init(GLFWwindow* window, const char* glsl_version)
     //io.ConfigViewportsNoTaskBarIcon = true;
 
     // Anti-Aliased plots
-    ImPlot::GetStyle().AntiAliasedLines = true;
+    //ImPlot::GetStyle().AntiAliasedLines = true;
 
 	// Setup Platform/Renderer bindings
 	ImGui_ImplGlfw_InitForOpenGL(window, true);
@@ -119,7 +119,7 @@ void RenderCoreOpenGl::Update(std::vector<std::function<void()>> callbacks)
             ImPlot::ShowColormapSelector("ImPlot Colormap");
             ImPlot::ShowInputMapSelector("Input Map");
             ImGui::Separator();
-            ImGui::Checkbox("Anti-Aliased Lines", &ImPlot::GetStyle().AntiAliasedLines);
+            //ImGui::Checkbox("Anti-Aliased Lines", &ImPlot::GetStyle().AntiAliasedLines);
             ImGui::Checkbox("Use Local Time", &ImPlot::GetStyle().UseLocalTime);
             ImGui::Checkbox("Use ISO 8601", &ImPlot::GetStyle().UseISO8601);
             ImGui::EndMenu();

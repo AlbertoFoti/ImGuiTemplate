@@ -5,6 +5,7 @@ find_package(glad CONFIG REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 find_package(ImGui-SFML CONFIG REQUIRED)
+set(SFML_STATIC_LIBRARIES FALSE)
 find_package(SFML COMPONENTS system window graphics audio CONFIG REQUIRED)
 find_package(implot CONFIG REQUIRED)
 

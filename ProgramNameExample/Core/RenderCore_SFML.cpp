@@ -17,7 +17,7 @@ void RenderCore_SFML::Init(sf::RenderWindow& window)
     //io.ConfigViewportsNoTaskBarIcon = true;
 
     // Anti-Aliased plots
-    ImPlot::GetStyle().AntiAliasedLines = true;
+    //ImPlot::GetStyle().AntiAliasedLines = true;
 
     loadFonts();
 
