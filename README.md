@@ -36,6 +36,15 @@ Just as an example for imgui
 
     vcpkg install imgui[docking-experimental,glfw-binding, opengl3-binding]:x64-windows
 
+## How to use
+
+- in "settings.hpp" set the rendering API you want to use to true and all others to false
+- To develop your application use the examples in the src_example folder
+
+(they extend the correponding rending api core renderer and allow you to simply define callbacks to create GUI windows and elements)
+- Develop your functions
+- Register them in the Register() function
+
 ## Libraries Used
 
 - vcpkg library manager
