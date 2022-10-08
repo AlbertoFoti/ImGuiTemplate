@@ -9,20 +9,18 @@ find_package(SFML COMPONENTS system window graphics audio CONFIG REQUIRED)
 find_package(implot CONFIG REQUIRED)
 
 add_library(
-        ProgramSrc
-        ExampleClassOpenGl.hpp
-        ExampleClassOpenGl.cpp
-        ExampleClassSFML.hpp
-        ExampleClassSFML.cpp
+        Src
+        src.hpp
+        src.cpp
 )
 
-target_link_libraries(ProgramSrc PRIVATE glad::glad)
-target_link_libraries(ProgramSrc PRIVATE glfw)
-target_link_libraries(ProgramSrc PRIVATE imgui::imgui)
-target_link_libraries(ProgramSrc PRIVATE ImGui-SFML::ImGui-SFML)
-target_link_libraries(ProgramSrc PRIVATE
+target_link_libraries(Src PRIVATE glad::glad)
+target_link_libraries(Src PRIVATE glfw)
+target_link_libraries(Src PRIVATE imgui::imgui)
+target_link_libraries(Src PRIVATE ImGui-SFML::ImGui-SFML)
+target_link_libraries(Src PRIVATE
         sfml-graphics
         sfml-window
         sfml-audio
         sfml-system)
-target_link_libraries(ProgramSrc PRIVATE implot::implot)
+target_link_libraries(Src PRIVATE implot::implot)

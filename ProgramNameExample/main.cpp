@@ -9,8 +9,8 @@
 #include "imgui_impl_opengl3.h"
 #include "imgui-SFML.h"
 #include "SFML/Graphics.hpp"
-#include "src/ExampleClassSFML.hpp"
-#include "src/ExampleClassOpenGl.hpp"
+#include "src_example/ExampleClassSFML.hpp"
+#include "src_example/ExampleClassOpenGl.hpp"
 
 /**
  * @brief Main : Entry point for program control (update and render loop)

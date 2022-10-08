@@ -16,7 +16,8 @@ add_executable (${PROJECT_NAME} "main.cpp" ${Sources})
 
 # sub directories
 add_subdirectory("Core")
-add_subdirectory("src")
+add_subdirectory("Src")
+add_subdirectory("src_example")
 add_subdirectory("assets")
 
 # Dependencies Targets
