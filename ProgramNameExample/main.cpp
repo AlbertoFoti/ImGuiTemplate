@@ -1,11 +1,13 @@
-#include "EntryPointExample.hpp"
-#include "settings.hpp"
+#include "Core/RenderCore_SFML.hpp"
 
 // OpenGL glad, GLFW, SFML  (Renderer)
+#include "settings.hpp"
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
 #include "imgui-SFML.h"
 #include "SFML/Graphics.hpp"
+#include "src/ExampleClassSFML.hpp"
+#include "src/ExampleClassOpenGl.hpp"
 
 /**
  * @brief Main : Entry point for program control (update and render loop)
@@ -42,23 +44,30 @@ int main()
 	glfwGetFramebufferSize(window, &screen_width, &screen_height);
 	glViewport(0, 0, screen_width, screen_height);
 
+    // Entry Point Example
+    ExampleClassOpenGl entryPointExample;
+
 #endif
 
 #if __SFML_PROGRAM__
 
     // SFML window setup
     sf::RenderWindow window(sf::VideoMode(800, 800), "Window Title");
-    ImGui::SFML::Init(window);
+    if(!ImGui::SFML::Init(window))
+        return 2;
+
+    // Entry Point Example
+	ExampleClassSFML entryPointExample;
 
 #endif
-
-	// Entry Point Example
-	EntryPointExample entryPointExample;
 
 #if __OPENGL_PROGRAM__
 
 	// Entry Point core (Init(), Update(), Render(), Shutdown())
     entryPointExample.Init(window, glsl_version);
+
+    // Register callbacks (views)
+    entryPointExample.Register();
 
     while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
@@ -77,6 +86,9 @@ int main()
 
     // Entry Point core (Init(), Update(), Render(), Shutdown())
     entryPointExample.Init(window);
+
+    // Register all callbacks (views)
+    entryPointExample.Register();
 
     // SFML Entry Point and loop
     sf::Clock deltaClock;
