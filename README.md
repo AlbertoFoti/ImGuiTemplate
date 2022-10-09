@@ -1,4 +1,4 @@
-# ImGui Template for C++ on Windows
+# ImGui Template for C++
 
 ImGui Template to develop C++ Desktop Apps
 
