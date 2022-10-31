@@ -55,7 +55,10 @@ int main()
 #if __SFML_PROGRAM__
 
     // SFML window setup
+    sf::ContextSettings settings;
+    settings.antialiasingLevel = 16;
     sf::RenderWindow window(sf::VideoMode(__WINDOW_WIDTH__, __WINDOW_HEIGHT__), __APP_NAME__);
+    window.setFramerateLimit(60);
     if(!ImGui::SFML::Init(window))
         return 2;
 
