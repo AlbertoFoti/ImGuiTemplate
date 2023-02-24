@@ -19,7 +19,7 @@
 int main()
 {
 
-#if __OPENGL_PROGRAM__
+#if __IMGUI_PROGRAM__
 
 	// Setup Window
 	if (!glfwInit())
@@ -67,7 +67,7 @@ int main()
 
 #endif
 
-#if __OPENGL_PROGRAM__
+#if __IMGUI_PROGRAM__
 
 	// Entry Point core (Init(), Update(), Render(), Shutdown())
     entryPointExample.Init(window, glsl_version);
